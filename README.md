@@ -26,3 +26,13 @@ Pour les améliorations du jeu de données j'ai pensé à :
 - Renvoyer un tableau de Program au lieu d'un objet indéxé
 - Peut-être, ne pas renvoyer des urls d'image qui sont KO
 - La petite faute d'orthographe sur le mot "thumbnail" :)
+
+## Choix des technos
+
+J'ai choisi de partir du NextJs pour répondre à la problématique du SSR, et pour le reste je me suis adapté à la stack technique
+de chez TF1 à une exception près.
+
+J'ai fait le choix d'utiliser Emotion JS qui à mon sens est beaucoup plus intuitif que tailwind et surtout car j'ai oublié le
+nom des classes :)
+
+Encore Merci à vous !
