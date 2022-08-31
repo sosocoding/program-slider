@@ -8,12 +8,10 @@ type SliderArrowProps = {
   onClick: () => void
 }
 
-const SliderArrow: FC<SliderArrowProps> = ({ children, className, onClick }) => {
-  return (
-    <button className={className} css={[styles.arrowButton, className]} onClick={onClick}>
-      {children}
-    </button>
-  )
-}
+const SliderArrow: FC<SliderArrowProps> = ({ children, className, onClick }) => (
+  <button className={className} css={[styles.arrowButton, className]} onClick={onClick}>
+    {children}
+  </button>
+)
 
 export default SliderArrow

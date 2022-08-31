@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Bonjour, je suis Soufiane merci de prendre le temps de me lire.
 
-## Getting Started
+## Questions
 
-First, run the development server:
+Je me suis demandé :
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- A-t-on le droit d'utiliser une librarie pour le carousel ou si le but de l'exercice était l'implémentation from scratch de ce dernier.
+- Le carousel doit-il être responsive ?
+- Y-a-t-il un comportement particulier à respecter ?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Au final j'ai opté pour une implémentation from scratch
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Dans l'implémentation from scratch je me suis demandé si je devais créer un state qui gère l'état du slider en contenant
+l'index des cards affichés, finalement je suis aller au plus simple en faisant scroller une DIV horizontalement.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Pour la partie récupération de données, j'ai obtenu un objet indexé contenant d'autres objets j'ai donc du le formatter sous forme
+de tableau en faisant attention de l'indiquer à typescript.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+J'ai eu la problèmatique des images qui n'existe pas, ce qui avait pour conséquence de casser le design de mon slider,
+j'ai donc créer un hook qui vérifie si celle-ci existe sinon il renvoi une image par défaut à la place.
 
-## Learn More
+## Améliorations du JDD
 
-To learn more about Next.js, take a look at the following resources:
+Pour les améliorations du jeu de données j'ai pensé à :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Renvoyer un tableau de Program au lieu d'un objet indéxé
+- Peut-être, ne pas renvoyer des urls d'image qui sont KO
+- La petite faute d'orthographe sur le mot "thumbnail" :)

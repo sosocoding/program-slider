@@ -11,13 +11,11 @@ const ProgramSlider: FC<SliderProps> = (program) => {
   const programList = Object.values(program)
 
   return (
-    <div>
-      <Slider hasArrows>
-        {programList?.map((item) => {
-          return <Card thumnail={item.thumnail} name={item.name} key={item.id} />
-        })}
-      </Slider>
-    </div>
+    <Slider hasArrows>
+      {programList?.map((item) => {
+        return <Card thumnail={item.thumnail} name={item.name} key={item.id} />
+      })}
+    </Slider>
   )
 }
 

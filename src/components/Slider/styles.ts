@@ -23,10 +23,11 @@ export const content = css({
 })
 
 export const arrowButton = css({
-  backgroundColor: '#000',
-  opacity: '0.7',
+  backgroundColor: '#313132',
   padding: '8px 8px 4px 10px',
   cursor: 'pointer',
+  border: 'none',
+  zIndex: 1,
 })
 
 export const arrowButtonLeft = css({

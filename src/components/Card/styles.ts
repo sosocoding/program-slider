@@ -8,6 +8,7 @@ export const container = css({
   marginLeft: '12px',
   marginRight: '12px',
   textAlign: 'center',
+  cursor: 'pointer',
 })
 
 export const imgWrapper = css({
